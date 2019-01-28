@@ -23,8 +23,8 @@ body{
 /* Start Nav Bar */
 .navbar {
     background-color: rgba(0, 0, 0, 0) !important;
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
-    font-family: 'Bahnschrift';
     letter-spacing: -.015vw;
     font-weight: lighter;
     font-size: 1.45rem;
@@ -61,11 +61,11 @@ body{
 }
 
 .caption h2{
-    font-family: 'Bahnschrift';
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: -.05vw;
-    font-weight: lighter;
     position: absolute;
     font-size: 4.5rem;
+    font-weight: 400;
     max-width: 100%;
     color: white;
     width: 100%;
@@ -226,7 +226,7 @@ body{
     left: 7vw;
     width: 30vw;
     height: 16vh;
-    position: absolute;
+    position: relative;
     background: white;
     border: 1px solid #2A2A2A;
 }
