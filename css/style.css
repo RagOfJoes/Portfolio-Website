@@ -14,10 +14,10 @@ body{
 /* Start Home Page */
 #home{
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     position: relative;
-    background-image: url('../images/homePageBG.png');
     background-size: cover;
+    background-image: url('../images/homePageBG.png');
 }
 
 /* Start Nav Bar */
@@ -27,7 +27,6 @@ body{
     font-family: 'Bahnschrift';
     letter-spacing: -.015vw;
     font-weight: lighter;
-    /* font-size: 1.25vw; */
     font-size: 1.45rem;
     width: 100%;
     height: 10vh;
@@ -93,78 +92,98 @@ body{
 /* Start About Page */
 #about{
     width: 100vw;
-    height: 80vh;
+    height: 81vh;
+    position: relative;
     /* margin and padding are for nav bar */
     padding-top: 10vh; 
     margin-top: -10vh;
     background: #242529;
-    box-sizing: border-box;
 }
 
 /* Start About Page Side Content */
-#about #person{
-    position: absolute !important;
-    margin-left: 2.75vw;
-    margin-top: .5vh;
+#about .col-md-3{
+    top: -10vh;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#about .col-md-3 #person{
+    position: absolute;
     width: 18vw;
+    left: 6vw;
 }
 /* End About Page Side Content */
 
 /* Start About Page Main Content */
 #about .col-md-9{
-    height: 60vh;
+    top: -10vh;
+    height: 70vh;
+    overflow: hidden;
     position: relative;
 }
 
-#about .aboutContent{
+#about .col-md-9 .aboutContent{
+    top: 12.5vh;
     width: 62vw;
-    height: 75%;
-    position: relative;
-    margin-top: 7.25vh;
+    left: 6.25vw;
+    position: absolute;
     border: 5px solid #E8A94B;
 }
 
 #about .aboutContent .about-inner{
-    margin-top: -3vh;
-    width: 61vw;
+    left: -.25vw;
+    width: 62vw;
     height: 45vh;
+    overflow: hidden;
+    position: relative;
 }
 
 #about .col-md-9 .aboutContent .about-inner h2, p{
     color: white;
-    position: relative;
     font-weight: lighter;
     font-family: 'Bahnschrift';
 }
 
 #about .col-md-9 .aboutContent .about-inner h2{
-    left: 3.25%;
-    margin-top: 3vh;
+    top: .75vh;
+    left: 2.25vw;
     font-size: 4.15vw;
+    position: absolute;
     letter-spacing: -.25vw;
 }
 
 #about .col-md-9 .aboutContent .about-inner #bio{
     letter-spacing: -.075vw;
-    margin-top: -2.15%;
-    margin-left: 11.50%;
+    left: 4.70vw;
+    position: absolute;
     font-size: 1.15vw;
     color: #A17544;
+    top: 9vh;
 }
 
 #about .col-md-9 .aboutContent .about-inner #description{
     letter-spacing: -.075vw;
-    margin: -3.15vh 1.20vw 0 2vw;
+    position: absolute; 
     font-size: 1.65vw;
     color: #7A7A7A;
+    left: 3.25vw;
+    top: 14vh;
 }
 
-#about .col-md-9 .aboutContent .about-inner .aboutTitle{
-    top: .005vh;
-    width: 14vw;
-    left: 47.5vw;
+#about .col-md-9 .aboutContent .about-inner #aboutMeTitle{
+    z-index: 1;
+    left: 50.1vw;
+    font-size: 3vw;
+    color: #242529;
     position: absolute;
-    content: url('../images/aboutMeTitle.png');
+}
+
+#about .col-md-9 .aboutContent .about-inner img{
+    top: .009vh;
+    left: 46.25vw;
+    width: 25%;
+    position: absolute;
 }
 /* End About Page Main Content */
 
@@ -173,17 +192,19 @@ body{
 /* Start Projects Page */
 #projects{
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     padding-top: 10vh;
     margin-top: -10vh;
+    position: relative;
     background: #E8A94B;
 }
 
 #projects h2{
-    top: 2vh;
+    top: 10vh;
+    left: 43vw;
     font-size: 2.75vw;
     color: #2A2A2A;
-    position: relative;
+    position: absolute;
     font-weight: lighter;
     font-family: 'Bahnschrift';
 }
@@ -194,68 +215,73 @@ body{
 }
 
 #projects .col-md-6{
+    top: -10vh;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* Start Projects First Column */
 .projectContentOne{
-    z-index: 5;
+    top: 20vh;
+    left: 7vw;
     width: 30vw;
     height: 16vh;
+    position: absolute;
     background: white;
-    margin: 7.5vh 0 0 3.5vw;
     border: 1px solid #2A2A2A;
 }
 
 .projectContentOne #pathFinderGIF{
-    width: 7.745vw;
-    height: 15.75vh;
+    width: 7.8vw;
+    height: 15.8vh;
+    position: absolute;
 }
 
 .projectContentOne h1{
+    left: 8.5vw;
     color: #2A2A2A;
-    position: relative;
-    font-weight: lighter;
-    margin: -15.40vh 0 0 8vw;
     font-size: 2.25vw; 
+    position: absolute;
+    font-weight: lighter;
     font-family: 'Bahnschrift';
 }
 
 .projectContentOne a{
+    top: 1vh;
+    left: 20vw;
     z-index: 1;
-    top: 9.1vh;
-    left: 23.5vw;
     position: absolute;
 }
 
 .projectContentOne a #gitHubLogo{
     width: 1.5vw;
+    position: absolute;
 }
 
-#codeLangUsed{
-    left: 4vw;
-    z-index: 3;
+.projectContentOne #codeLangUsed{
+    top: 2vh;
+    left: 28.5vw;
+    color: #E8A94B;
     padding-top: .8vh;
-    position: relative;
-    font-weight: lighter;
+    font-size: 1.75vw;
+    position: absolute;
     background: #242529;
     letter-spacing: .50vw;
-    text-transform: uppercase;
     writing-mode: vertical-rl;
-    font-family: 'Bahnschrift';
-    color: #E8A94B !important;
-    font-size: 1.75vw !important;
-    margin: -16.15vh 0 0 28.25vw;
 }
 
+/* #codeLangUsed{
+} */
+
 .projectContentOne p{
+    top: 4vh;
+    left: 8.6vw;
     width: 19vw;
     color: #E8A94B;
-    position: relative;
+    position: absolute;
     font-size: .8557vw;
     font-weight: lighter;
     font-family: 'Bahnschrift';
-    margin: -1vh 0 0 8.10vw;
 }
 
 /* End Projects First Column */
