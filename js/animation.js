@@ -25,7 +25,6 @@ $('.about-inner').mouseover(function () {
 function projectAnim(isHover) {
     if (isHover) {
         $('#codeLangUsed').animate({ margin: '2vh, 0, 0, .5vw' }, 125);
-        // $('#gitHubLogo').animate({ margin: '10vh, 0, 0, 11.25vw' }, 1);
     } else {
         $('#codeLangUsed').animate({ margin: '2vh, 0, 0, 0' }, 125);
     }
@@ -34,9 +33,7 @@ function projectAnim(isHover) {
 function aboutAnim(isHover) {
     if (isHover) {
         $("#aboutMeTitle").css({ 'transform': 'scale(1.03, 1.03)' });
-        $("#aboutMeTitleBG").css({ 'transform': 'scale(1.03, 1.03)' });
     } else{
         $("#aboutMeTitle").css({ 'transform': 'scale(1, 1)' });
-        $("#aboutMeTitleBG").css({ 'transform': 'scale(1, 1)' });
     }
 }

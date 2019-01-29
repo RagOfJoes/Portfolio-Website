@@ -26,8 +26,8 @@ body{
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     letter-spacing: -.015vw;
-    font-weight: lighter;
     font-size: 1.45rem;
+    font-weight: 400;
     width: 100%;
     height: 10vh;
 }
@@ -65,7 +65,7 @@ body{
     letter-spacing: -.05vw;
     position: absolute;
     font-size: 4.5rem;
-    font-weight: 400;
+    font-weight: 300;
     max-width: 100%;
     color: white;
     width: 100%;
@@ -139,10 +139,16 @@ body{
     position: relative;
 }
 
-#about .col-md-9 .aboutContent .about-inner h2, p{
+#about .col-md-9 .aboutContent .about-inner h2{
     color: white;
-    font-weight: lighter;
-    font-family: 'Bahnschrift';
+    font-weight: 300;
+    font-family: 'Nunito', sans-serif;
+}
+
+#about .col-md-9 .aboutContent .about-inner p{
+    color: white;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
 }
 
 #about .col-md-9 .aboutContent .about-inner h2{
@@ -155,11 +161,11 @@ body{
 
 #about .col-md-9 .aboutContent .about-inner #bio{
     letter-spacing: -.075vw;
-    left: 4.70vw;
     position: absolute;
     font-size: 1.15vw;
     color: #A17544;
-    top: 9vh;
+    left: 4.9vw;
+    top: 9.75vh;
 }
 
 #about .col-md-9 .aboutContent .about-inner #description{
@@ -172,11 +178,13 @@ body{
 }
 
 #about .col-md-9 .aboutContent .about-inner #aboutMeTitle{
-    z-index: 1;
-    left: 50.1vw;
-    font-size: 3vw;
+    top: 1.5vh;
+    left: 49.4vw;
+    font-weight: 400;
+    font-size: 2.6vw;
     color: #242529;
     position: absolute;
+    font-family: 'Nunito', sans-serif;
 }
 
 #about .col-md-9 .aboutContent .about-inner img{
@@ -205,8 +213,8 @@ body{
     font-size: 2.75vw;
     color: #2A2A2A;
     position: absolute;
-    font-weight: lighter;
-    font-family: 'Bahnschrift';
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
 }
 
 #projects h2 u{
@@ -222,7 +230,7 @@ body{
 
 /* Start Projects First Column */
 .projectContentOne{
-    top: 20vh;
+    top: 25vh;
     left: 7vw;
     width: 30vw;
     height: 16vh;
@@ -242,12 +250,12 @@ body{
     color: #2A2A2A;
     font-size: 2.25vw; 
     position: absolute;
-    font-weight: lighter;
-    font-family: 'Bahnschrift';
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
 }
 
 .projectContentOne a{
-    top: 1vh;
+    top: 1.21vh;
     left: 20vw;
     z-index: 1;
     position: absolute;
@@ -259,14 +267,17 @@ body{
 }
 
 .projectContentOne #codeLangUsed{
-    top: 2vh;
-    left: 28.5vw;
+    top: -.01vh;
+    left: 27.65vw;
+    height: 15.85vh;
     color: #E8A94B;
-    padding-top: .8vh;
+    padding-top: 2.5vh;
     font-size: 1.75vw;
     position: absolute;
     background: #242529;
     letter-spacing: .50vw;
+    text-transform: uppercase;
+    border: 1px solid #242529;
     writing-mode: vertical-rl;
 }
 
@@ -274,14 +285,14 @@ body{
 } */
 
 .projectContentOne p{
-    top: 4vh;
+    top: 5vh;
     left: 8.6vw;
     width: 19vw;
+    font-size: .8vw;
+    font-weight: 400;
     color: #E8A94B;
     position: absolute;
-    font-size: .8557vw;
-    font-weight: lighter;
-    font-family: 'Bahnschrift';
+    font-family: 'Nunito', sans-serif;
 }
 
 /* End Projects First Column */
