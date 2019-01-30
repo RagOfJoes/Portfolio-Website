@@ -5,8 +5,8 @@ $(window).scroll(function () {
 function parallax() {
     var windowScroll = $(window).scrollTop();
 
-    var personPicParallax = (windowScroll * .0185);
-    var bioParallax = (windowScroll * .00475);
+    var personPicParallax = (windowScroll * .0177);
+    var bioParallax = (windowScroll * .005);
     console.log(bioParallax);
 
     $('#home').css('background-position', 'center ' + (windowScroll * .35) + 'px');
