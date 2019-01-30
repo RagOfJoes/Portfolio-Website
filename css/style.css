@@ -27,6 +27,7 @@ body{
     text-transform: uppercase;
     letter-spacing: -.015vw;
     font-size: 1.45rem;
+    z-index: 10;
     font-weight: 400;
     width: 100%;
     height: 10vh;
@@ -61,7 +62,7 @@ body{
 }
 
 .caption h2{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: -.05vw;
     position: absolute;
     font-size: 4.5rem;
@@ -115,6 +116,15 @@ body{
     position: relative;
 }
 
+#about .col-md-5 .overlay{
+    top: 14vh;
+    left: 13vw;
+    width: 30vw;
+    height: 10vh;
+    position: absolute;
+    background: white;
+}
+
 #about .col-md-5 #person{
     position: absolute;
     width: 30vw;
@@ -134,10 +144,12 @@ body{
 #about .col-md-7 .about-inner{
     top: 20vh;
     left: 0vw;
-    width: 45.6vw;
+    width: 0vw;
+    /* width: 45.6vw; */
     height: 40vh;
-    height: 380px;
+    max-height: 380px;
     position: absolute;
+    overflow: hidden;
     background: #E8A94B;
 }
 
@@ -149,9 +161,9 @@ body{
     text-align: center;
     position: absolute;
     letter-spacing: -.1vw;
-    font-weight: lighter;
+    font-weight: 300;
     text-transform: uppercase;
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #about .col-md-7 .about-inner #bio{
@@ -163,7 +175,7 @@ body{
     position: absolute;
     font-weight: lighter;
     background: #2A2A2A;
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #about .col-md-7 .about-inner #description{
@@ -173,8 +185,8 @@ body{
     color: white;
     font-size: 1.3vw;
     position: absolute;
-    font-weight: lighter;
-    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 /* End About Page Main Content */
 
