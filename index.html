@@ -8,12 +8,12 @@
     <title>Victor Ragojos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Open+Sans:300" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto:100,300" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body data-spy="scroll" data-target="#navBarR">
+    <!-- Start Nav Bar -->
     <div class="navContainer">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarR">
@@ -37,10 +37,10 @@
             </div>
         </nav>
     </div>
+    <!-- End Nav Bar -->
+
     <!-- Home Section -->
-    <div id="home" class="offset">
-        <!-- Nav Bar -->
-        <!-- End Nav Bar -->
+    <div id="home">
         <!-- Start Home Inner Section -->
         <div class="homeInner">
             <div class="home-wrap">
@@ -59,7 +59,7 @@
     <!-- End Home Section -->
 
     <!-- About Section -->
-    <div id="about" class="offset">
+    <div id="about">
         <div class="row">
             <div class="col-md-5">
                 <div class="overlay"></div>
@@ -93,15 +93,18 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="projectContentOne">
-                        <img id="pathFinderGIF" src="images/pathFinderJava.gif">
-                        <a href="https://github.com/RagOfJoes/a-search-algorithm-visualization" target="_blank"><img id="gitHubLogo"
-                                src="images/github-logo.png"></a>
-                        <h1>PathFinder</h1>
-                        <p>My implementation of the A* Search Algorithm
-                            with the utilization of Java for the core base code and
-                            JavaSwing for the visuals. This also utilizes
-                            the Insertion Sort Method for finding next optimal path.</p>
-                        <h2 id="codeLangUsed">Java</h2>
+                        <a href="https://github.com/RagOfJoes/a-search-algorithm-visualization" target="_blank"><img id="pathFinderGIF" src="images/pathFinderJava.gif"></a>
+                        <div class="projectOneOverlay"></div>
+                        <div id="projectOneBG">
+                            <h3 class="text-center">PathFinder</h3>
+                            <h1 class="text-center">JAVA</h1>
+                            <p>A visualization of the A* Search Algorithm
+                                which utilizes Java as the base core code
+                                and Java Swing for the visuals. The
+                                Insertion Sort Method is also utilized to
+                                sort through all the paths that are available
+                                and choose the most optimal path. </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6"></div>

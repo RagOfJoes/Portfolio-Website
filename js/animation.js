@@ -10,30 +10,21 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 });
 
-$('.projectContentOne').mouseover(function () {
-    projectAnim(true);
+$("#pathFinderGIF").mouseover(function () {
+    projectOneAnim(true);
 }).mouseleave(function () {
-    projectAnim(false);
+    projectOneAnim(false);
 });
 
-$('.about-inner').mouseover(function () {
-    aboutAnim(true);
-}).mouseleave(function () {
-    aboutAnim(false);
-});
-
-function projectAnim(isHover) {
+function projectOneAnim(isHover) {
+    var tween = new TimelineLite();
     if (isHover) {
-        $('#codeLangUsed').animate({ margin: '2vh, 0, 0, .5vw' }, 125);
+        tween.to('.projectOneOverlay', .3, { width: '15vw' })
+            .to('.projectOneOverlay', .5, { height: '0vh' }, 'together')
+            .to('#projectOneBG', 0, { width: '15vw', height: '16.5vh' }, 'together');
     } else {
-        $('#codeLangUsed').animate({ margin: '2vh, 0, 0, 0' }, 125);
-    }
-}
-
-function aboutAnim(isHover) {
-    if (isHover) {
-        $("#aboutMeTitle").css({ 'transform': 'scale(1.03, 1.03)' });
-    } else {
-        $("#aboutMeTitle").css({ 'transform': 'scale(1, 1)' });
+        tween.to('.projectOneOverlay', .3, { height: '16.5vh' })
+            .to('.projectOneOverlay', .4, {width: '0vw'}, 'together')
+            .to('#projectOneBG', .3, {width: '0vh'}, 'together');
     }
 }

@@ -251,8 +251,8 @@ body{
     font-size: 2.75vw;
     color: #2A2A2A;
     position: absolute;
-    font-weight: 400;
-    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 #projects h2 u{
@@ -270,67 +270,79 @@ body{
 .projectContentOne{
     top: 25vh;
     left: 7vw;
-    width: 30vw;
-    height: 16vh;
+    width: 25vw;
+    height: 20.25vh;
+    overflow: hidden;
     position: relative;
-    background: white;
-    border: 1px solid #2A2A2A;
-}
-
-.projectContentOne #pathFinderGIF{
-    width: 7.8vw;
-    height: 15.8vh;
-    position: absolute;
-}
-
-.projectContentOne h1{
-    left: 8.5vw;
-    color: #2A2A2A;
-    font-size: 2.25vw; 
-    position: absolute;
-    font-weight: 400;
-    font-family: 'Nunito', sans-serif;
 }
 
 .projectContentOne a{
-    top: 1.21vh;
-    left: 20vw;
     z-index: 1;
     position: absolute;
 }
 
-.projectContentOne a #gitHubLogo{
-    width: 1.5vw;
+.projectContentOne a #pathFinderGIF{
+    z-index: 1;
+    width: 10vw;
+    height: 20.25vh;
     position: absolute;
 }
 
-.projectContentOne #codeLangUsed{
-    top: -.01vh;
-    left: 27.65vw;
-    height: 15.85vh;
+.projectContentOne .projectOneOverlay{
+    top: 2vh;
+    left: 10vw;
+    z-index: 2;
+    width: 0vw;
+    /* width: 15vw; */
+    height: 16.5vh;
+    position: absolute;
+    background: #2A2A2A;
+}
+
+.projectContentOne #projectOneBG{
+    top: 2vh;
+    left: 10vw;
+    z-index: 0;
+    width: 15vw;
+    height: 0vh;
+    /* height: 16.5vh; */
+    overflow: hidden;
+    position: relative;
+    background: #2A2A2A;
+}
+
+.projectContentOne h3{
+    width: 15vw;
+    z-index: 1;
+    color: #2A2A2A;
+    font-weight: 300;
+    font-size: 1.25vw; 
+    position: absolute;
+    background-color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.projectContentOne h1{
+    top: 2.25vh;
+    width: 15vw;
+    z-index: 1;
     color: #E8A94B;
-    padding-top: 2.5vh;
-    font-size: 1.75vw;
+    font-weight: 300;
+    font-size: 1vw; 
     position: absolute;
-    background: #242529;
-    letter-spacing: .50vw;
-    text-transform: uppercase;
-    border: 1px solid #242529;
-    writing-mode: vertical-rl;
+    background-color: #FFF;
+    font-family: 'Roboto', sans-serif;
 }
-
-/* #codeLangUsed{
-} */
 
 .projectContentOne p{
-    top: 5vh;
-    left: 8.6vw;
-    width: 19vw;
-    font-size: .8vw;
-    font-weight: 400;
+    top: 5.25vh;
+    left: .1vw;
+    z-index: 1;
+    font-size: .7vw;
+    font-weight: 300;
     color: #E8A94B;
     position: absolute;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* End Projects First Column */
