@@ -14,32 +14,32 @@
 </head>
 
 <body data-spy="scroll" data-target="#navBarR">
+    <div class="navContainer">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarR">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarR">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a id="homeNav" href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="aboutNav" href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="projectsNav" href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactNav" href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <!-- Home Section -->
     <div id="home" class="offset">
         <!-- Nav Bar -->
-        <div class="navContainer">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarR">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navBarR">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a id="homeNav" href="#home" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="aboutNav" href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="projectsNav" href="#projects" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="contactNav" href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
         <!-- End Nav Bar -->
         <!-- Start Home Inner Section -->
         <div class="homeInner">
@@ -63,9 +63,12 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="overlay"></div>
+                <div class="overlayTwo"></div>
                 <img id="person" src="images/aboutPerson.png">
             </div>
             <div class="col-md-7">
+                <div class="overlayAboutInnerOne"></div>
+                <div class="overlayAboutInner"></div>
                 <div class="about-inner">
                     <h2>Victor Ragojos</h2>
                     <p id="bio">Coding Enthusiast, Gamer, and Self-Learner</p><br>

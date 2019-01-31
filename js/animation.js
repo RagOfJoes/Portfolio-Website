@@ -1,11 +1,11 @@
 // For Type Writer animation in landing page
 document.addEventListener('DOMContentLoaded', function () {
     var typed = new Typed(".typeWriter", {
-        strings: ["[Hello World!]", "[Hello User!]", "[Hello Internet!]"],
+        strings: ["[Hello World!]", "Welcome to my website!", "Hope you enjoy!"],
         showCursor: false,
         loopCount: false,
-        typeSpeed: 85,
-        backSpeed: 65,
+        typeSpeed: 55,
+        backSpeed: 35,
         loop: true
     })
 });
@@ -33,7 +33,7 @@ function projectAnim(isHover) {
 function aboutAnim(isHover) {
     if (isHover) {
         $("#aboutMeTitle").css({ 'transform': 'scale(1.03, 1.03)' });
-    } else{
+    } else {
         $("#aboutMeTitle").css({ 'transform': 'scale(1, 1)' });
     }
 }

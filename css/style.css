@@ -74,10 +74,13 @@ body{
 }
 
 .btn-outline{
+    top: 88vh;
     width: 65px;
-    margin-top: -10%;
-    border-radius: 45%;
-    position: relative;
+    position: absolute;
+    animation-duration: .7s;
+    animation-name: arrowAnimation;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     content: url('../images/homeInnerArrows.png');
 }
 
@@ -119,14 +122,28 @@ body{
 #about .col-md-5 .overlay{
     top: 14vh;
     left: 13vw;
+    z-index: 1;
     width: 30vw;
-    height: 10vh;
+    height: 51.75vh;
     position: absolute;
-    background: white;
+    background: #FFFFFF;
+}
+
+#about .col-md-5 .overlayTwo{
+    top: 14vh;
+    left: 13vw;
+    width: 30vw;
+    height: 51.75vh;
+    /* height: 51.75vh; */
+    z-index: 1;
+    position: absolute;
+    background: #2A2A2A;
 }
 
 #about .col-md-5 #person{
     position: absolute;
+    height: 51.75vh;
+    max-width: 600px;
     width: 30vw;
     left: 13vw;
     top: 14vh;
@@ -141,12 +158,38 @@ body{
     position: relative;
 }
 
-#about .col-md-7 .about-inner{
-    top: 20vh;
+#about .col-md-7 .overlayAboutInnerOne{
+    top: 20.5vh;
     left: 0vw;
-    width: 0vw;
-    /* width: 45.6vw; */
+    z-index: 2;
+    /* width: 0vw; */
     height: 40vh;
+    max-height: 380px;
+    width: 45.6vw;
+    overflow: hidden;
+    position: absolute;
+    background: #2A2A2A;
+}
+
+#about .col-md-7 .overlayAboutInner{
+    top: 20.5vh;
+    left: 0vw;
+    z-index: 1;
+    width: 0vw;
+    height: 40vh;
+    max-height: 380px;
+    /* width: 45.6vw; */
+    overflow: hidden;
+    position: absolute;
+    background: #E8A94B;
+}
+
+#about .col-md-7 .about-inner{
+    top: 20.5vh;
+    left: 0vw;
+    z-index: 0;
+    height: 40vh;
+    width: 45.6vw;
     max-height: 380px;
     position: absolute;
     overflow: hidden;
@@ -303,3 +346,19 @@ body{
     background-color: #2A2A2A;
 }
 /* End Contact Page */
+
+/* Start CSS Keyframe Animations */
+@keyframes arrowAnimation{
+    0% {
+        top: 88vh;
+    } 25%{
+        top: 88.25vh;
+    } 50%{
+        top: 88.5vh;
+    } 75%{
+        top: 88.75vh;
+    } 100%{
+        top: 89vh;
+    }
+}
+/* End CSS Keyframe Animations */

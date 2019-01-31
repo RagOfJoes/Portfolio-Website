@@ -1,14 +1,15 @@
 $(document).ready(function () {
     var controller = new ScrollMagic.Controller();
     var tween = new TimelineLite();
-    tween.add(TweenMax.from('#person', .15, { width: '0vw', height: '0vh' }));
-    tween.add(TweenMax.to('.about-inner', .15, { width: '45.6vw' }));
-    
+    tween.to('.overlayAboutInnerOne', .35, { height: '0vh', ease: Sine.easeOut }, 'first')
+        .to('.overlayTwo', .35, { height: '0vh', ease: Sine.easeOut }, 'first')
+        .from('.overlayAboutInner', .35, { width: '45.6vw', ease: Sine.easeOut }, 'second')
+        .to('.overlay', .35, { width: '0vw', ease: Sine.easeOut }, 'second');
+
     var scene = new ScrollMagic.Scene({
         triggerElement: '#about #person',
-        triggerHook: 0.5,
+        triggerHook: 0.6,
     })
-        .reverse(true)
         .addIndicators({
             name: 'test',
             indent: 200,
