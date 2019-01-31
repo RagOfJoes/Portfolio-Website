@@ -322,16 +322,16 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.projectContentOne h1{
-    top: 2.25vh;
+.projectContentOne #codeLang{
+    left: 0vw;
+    top: 1.5vh;
     width: 15vw;
-    z-index: 1;
+    z-index: -1;
+    height: 2.75vh;
+    font-size: 1vw;
     color: #E8A94B;
-    font-weight: 300;
-    font-size: 1vw; 
     position: absolute;
     background-color: #FFF;
-    font-family: 'Roboto', sans-serif;
 }
 
 .projectContentOne p{
@@ -344,7 +344,6 @@ body{
     position: absolute;
     font-family: 'Roboto', sans-serif;
 }
-
 /* End Projects First Column */
 
 /* End Projects Page */
