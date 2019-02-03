@@ -119,7 +119,7 @@ body{
     position: relative;
 }
 
-#about .col-md-5 .overlay{
+#about .col-md-5 .personLightOverlay{
     top: 14vh;
     left: 13vw;
     z-index: 1;
@@ -129,7 +129,7 @@ body{
     background: #FFFFFF;
 }
 
-#about .col-md-5 .overlayTwo{
+#about .col-md-5 .personDarkOverlay{
     top: 14vh;
     left: 13vw;
     z-index: 1;
@@ -157,7 +157,7 @@ body{
     position: relative;
 }
 
-#about .col-md-7 .overlayAboutInnerOne{
+#about .col-md-7 .aboutDarkOverlay{
     top: 20.5vh;
     left: 0vw;
     z-index: 2;
@@ -170,7 +170,7 @@ body{
     background: #2A2A2A;
 }
 
-#about .col-md-7 .overlayAboutInner{
+#about .col-md-7 .aboutLightOverlay{
     top: 20.5vh;
     left: 0vw;
     z-index: 1;
