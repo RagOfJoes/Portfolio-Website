@@ -5,5 +5,5 @@ $(window).scroll(function () {
 function parallax() {
     var windowScroll = $(window).scrollTop();
 
-    $('#home').css('background-position', 'center ' + (windowScroll * .35) + 'px');
+    $('.landingBG').css('background-position', 'center ' + (windowScroll * .55) + 'px');
 }

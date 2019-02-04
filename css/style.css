@@ -1,0 +1,335 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* End Reset Stylesheet */
+
+/* Start My Code */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Start Nav Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.015vw;
+    font-size: 1.45rem;
+    font-weight: 400;
+    width: 100%;
+    height: 10vh;
+}
+
+#navBar ul{
+    padding-left: 3.25vw;
+}
+
+#navBar ul li{
+    margin-top: 2%;
+    margin-right: 2.5vw;
+}
+
+.navbar a{
+    color: #a3a3a3;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav a:hover{
+    transform: scale(1.25, 1.25);
+}
+/* End Nav bar */
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Home Page */
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Start Landing Page */
+#home .landingBG{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    /* position: fixed; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/homePageBG.png');
+}
+
+#home .landingOverlay{
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(90, 49, 17, .3);
+}
+/* End Landing Page */
+
+/* Start Caption & Arrow */
+#home .caption{
+    top: 40%;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+}
+
+#home .caption h2{
+    color: white;
+    font-size: 6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home .caption .btn{
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    border: 1px solid;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* End Caption & Arrow */
+
+/* End Home Page */
+
+/* Start About Page */
+#about{
+    width: 100%;
+    height: 685px;
+    z-index: -1;
+    max-height: 685px;
+    background-color: #2A2A2A;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about .container{
+    width: 100%;
+    height: 100%;
+    max-height: 505px;
+}
+
+#about .col-md-12{
+    top: 90px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+    /* border: 1px solid red; */
+}
+
+#about .col{
+    width: 100%;
+    overflow: hidden;
+}
+
+#about .firstColumn .row{
+    width: 100%;
+    max-width: 1140px;
+}
+
+#about #personContainer{
+    left: 15px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 505px;
+    overflow: hidden; 
+}
+
+#about .personDarkOverlay{
+    z-index: 1;
+    width: 450px;
+    height: 505px;
+    position: absolute;
+    background-color: #2A2A2A;
+}
+
+#about .personLightOverlay{
+    width: 0px;
+    height: 505px;
+    position: absolute;
+    background-color: #FFF;
+}
+
+#about #personPicture{
+    width: 100%;
+    height: auto;
+    max-height: 505px;
+}
+
+#about #aboutTextContainer{
+    top: 53px;
+    left: 15px;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+    max-width: 690px;
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #E8A94B;
+}
+
+#about .aboutDarkOverlay{
+    z-index: 1;
+    width: 690px;
+    height: 400px;
+    position: absolute;
+    background-color: #2A2A2A;
+}
+
+#about .aboutLightOverlay{
+    width: 690px;
+    height: 400px;
+    position: absolute;
+    background-color: #FFF;
+}
+
+#about #aboutTextContainer h2{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 300;
+    padding-top: 15px;
+    letter-spacing: -2.75px;
+    text-transform: uppercase;
+}
+
+#about #aboutTextContainer h1{
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 6px;
+    color: #E8A94B;
+    background: #2A2A2A;
+    letter-spacing: -.75px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+#about #aboutTextContainer p{
+    letter-spacing: -.75px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: #FFF;
+    height: auto;
+    width: 100%;
+}
+/* End About Page */
+
+/* Start Projects Page */
+#projects{
+    width: 100%;
+    height: 100vh;
+    background-color: #E8A94B;
+}
+/* End Projects Page */

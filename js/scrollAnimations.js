@@ -3,11 +3,11 @@ $(document).ready(function () {
     var tween = new TimelineLite();
     tween.to('.aboutDarkOverlay', .35, { height: '0vh', ease: Sine.easeOut }, 'first')
         .to('.personDarkOverlay', .35, { height: '0vh', ease: Sine.easeOut }, 'first')
-        .from('.aboutLightOverlay', .35, { width: '45.6vw', ease: Sine.easeOut }, 'second')
-        .from('.personLightOverlay', .35, { width: '30vw', ease: Sine.easeOut }, 'second');
+        .to('.aboutLightOverlay', .35, { width: '0px', ease: Sine.easeOut }, 'second')
+        .from('.personLightOverlay', .35, { width: '450px', ease: Sine.easeOut }, 'second');
 
     var scene = new ScrollMagic.Scene({
-        triggerElement: '#about #person',
+        triggerElement: '#about #personContainer',
         triggerHook: 0.6,
     })
         .addIndicators({
