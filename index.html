@@ -12,137 +12,94 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target="#navBarR">
-    <!-- Start Nav Bar -->
-    <div class="navContainer">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarR">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navBarR">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a id="homeNav" href="#home" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="aboutNav" href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="projectsNav" href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="contactNav" href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    <!-- End Nav Bar -->
-
-    <!-- Home Section -->
-    <div id="home">
-        <!-- Start Home Inner Section -->
-        <div class="homeInner">
-            <div class="home-wrap">
-                <div class="home-inner">
-                    <div class="arrows"></div>
+<body data-spy="scroll" data-target="#navBar">
+    <!-- Start Home Page -->
+    <div id="home" class="container-fluid">
+        <!-- Start Nav Bar -->
+        <div class="navContainer">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navBar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a id="homeNav" href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="aboutNav" href="#about" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="projectsNav" href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contactNav" href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
+        </div>
+        <!-- End Nav Bar -->
+
+        <div class="landingBG">
+            <div class="landingOverlay"></div>
         </div>
 
-        <div class="caption text-center">
+        <div class="caption center-block text-center">
             <h2 class="typeWriter"></h2>
-            <a href="#about" class="btn btn-outline"></a>
+            <a href="#about" class="btn">EXPLORE</a>
         </div>
-        <!-- End Home Inner Section -->
     </div>
-    <!-- End Home Section -->
+    <!-- End Home Page -->
 
-    <!-- About Section -->
+    <!-- Start About Page -->
     <div id="about">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="overlay"></div>
-                <div class="overlayTwo"></div>
-                <img id="person" src="images/aboutPerson.png">
-            </div>
-            <div class="col-md-7">
-                <div class="overlayAboutInnerOne"></div>
-                <div class="overlayAboutInner"></div>
-                <div class="about-inner">
-                    <h2>Victor Ragojos</h2>
-                    <p id="bio">Coding Enthusiast, Gamer, and Self-Learner</p><br>
-                    <p id="description" class="text-center">Currently enrolled in college in pursuit of a Computer
-                        Science B.S. I'm
-                        also a tutor for my
-                        college for Computer Science classes, which, has helped me out a lot more than
-                        expected, in that, my communication skills have developed for the better. In my free
-                        time
-                        you'll often find me on my computer either learning some new programming technique
-                        or playing games.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End About Section -->
-
-    <!-- Projects Section -->
-    <div id="projects" class="offset">
-        <h2 class="text-center"><u>Projects</u></h2>
-        <div class="projectsContent">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="projectContentOne">
-                        <a href="https://github.com/RagOfJoes/a-search-algorithm-visualization" target="_blank"><img id="pathFinderGIF"
-                                src="images/pathFinderJava.gif"></a>
-                        <div class="projectOneOverlay"></div>
-                        <div id="projectOneBG">
-                            <h3 class="text-center">
-                                PathFinder
-                                <mark id="codeLang">JAVA</mark>
-                            </h3>
-                            <p>A visualization of the A* Search Algorithm
-                                which utilizes Java as the base core code
-                                and Java Swing for the visuals. The
-                                Insertion Sort Method is also utilized to
-                                sort through all the paths that are available
-                                and choose the most optimal path. </p>
+        <div class="aboutContainer container">
+            <div class="aboutFirstRow row">
+                <div class="aboutFirstColumn col-md-12 col-lg-12 col-xl-12">
+                    <div class="aboutSecondRow row">
+                        <div id="personContainer" class="col">
+                            <div class="personDarkOverlay"></div>
+                            <div class="personLightOverlay"></div>
+                            <img src="images/aboutPerson.png" id="personPicture">
+                        </div>
+                        <div id="aboutTextContainer" class="col">
+                            <div class="aboutDarkOverlay"></div>
+                            <div class="aboutLightOverlay"></div>
+                            <h2>Victor Ragojos</h2>
+                            <h1>Coding Enthusiast, Gamer, and Self-Learner</h1>
+                            <p>I'm currently in pursuit of a Computer Science Degree and also a Computer
+                                Science tutor for my college. On the side I love to teach myself new programming
+                                ideas and/or create applications that I find to be genuinely interesting. I also
+                                love
+                                to play games so much so that I was actually motivated to pursue this career
+                                path due to my curiosity of how computers worked all together. In the future I see
+                                myself working on cool new applications that could be helpful to the user and to
+                                people in general.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
             </div>
         </div>
     </div>
-    <!-- End Projects Section -->
+    <!-- End About Page -->
 
-    <!-- Contact Section -->
-    <div id="contact" class="offset">
-        <footer class="page-footer">
-            <div class="pageDivider text-center"></div>
-            <div class="row">
-                <div id="contactLeft" class="col-md-6">
-                    <div class="contactLeftInner">
-                        <h2>CONTACT ME</h2>
-                    </div>
-                </div>
-                <div id="contactRight" class="col-md-6">
-                    <div class="contactRightInner">
-                        <h3>SOCIAL MEDIA</h3>
-                        <ul>
-                            <li><img src="images/instagramPicture.png"></li>
-                            <li><img src="images/linkedInPicture.png"></li>
-                            <li><img src="images/snapchatPicture.png"></li>
-                            <li><img src="images/githubPicture.png"></li>
-                            <li><img src="images/twiiterPicture.png"></li>
-                            <li><img src="images/spotifyPicture.png"></li>
-                        </ul>
+    <!-- Start Projects Page -->
+    <div id="projects">
+        <div class="projectsContainer container">
+            <div class="projectsFirstRow row">
+                <div class="projectsFirstColumn col-12">
+                    <h2 class="text-center"><u>Projects</u></h2>
+                    <div class="projectsSecondRow row">
+                        <div class="col">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
-    <!-- End Contact Section -->
+    <!-- End Projects Page -->
 
     <!--- Start of Script CDNs -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -162,9 +119,8 @@
     <script src="js/typed.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/animation.js"></script>
-    <!-- <script src="js/changeNavbar.js"></script> -->
     <script src="js/scrollAnimations.js"></script>
-    <!-- Other Scripts End -->
+    <!-- Otehr Scripts -->
 </body>
 
 </html>
