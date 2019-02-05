@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 });
 
-$("#pathFinderGIF").mouseover(function () {
+$("#pathFinder").mouseover(function () {
     projectOneAnim(true);
 }).mouseleave(function () {
     projectOneAnim(false);
@@ -19,12 +19,12 @@ $("#pathFinderGIF").mouseover(function () {
 function projectOneAnim(isHover) {
     var tween = new TimelineLite();
     if (isHover) {
-        tween.to('.projectOneOverlay', .3, { width: '15vw' })
-            .to('.projectOneOverlay', .5, { height: '0vh' }, 'together')
-            .to('#projectOneBG', 0, { width: '15vw', height: '16.5vh' }, 'together');
+        tween.to('.pathFinderDarkOverlay', .3, { width: '260px' }, 'together')
+            .to('.pathFinderText', .3, { maxWidth: '260px' }, 'together')
+            .to('.pathFinderDarkOverlay', .3, { height: '0px' });
     } else {
-        tween.to('.projectOneOverlay', .3, { height: '16.5vh' })
-            .to('.projectOneOverlay', .4, {width: '0vw'}, 'together')
-            .to('#projectOneBG', .3, {width: '0vh'}, 'together');
+        tween.to('.pathFinderDarkOverlay', .3, { height: '100%' })
+            .to('.pathFinderText', .3, { maxWidth: '0px' }, 'together')
+            .to('.pathFinderText', .3, { maxWidth: '0px' }, 'together');
     }
 }
