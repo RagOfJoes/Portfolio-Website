@@ -306,7 +306,7 @@ body{
     font-weight: 300;
     padding-top: 15px;
     margin-bottom: -14px;
-    letter-spacing: -2. 5px;
+    letter-spacing: -2.5px;
     text-transform: uppercase;
 }
 
@@ -319,11 +319,13 @@ body{
     background: #2A2A2A;
     letter-spacing: -.75px;
     text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #about #aboutTextContainer p{
-    font-size: 1.7rem;
+    font-family: 'Abel', sans-serif;
+    padding-top: 16px;
+    font-size: 1.75rem;
     font-weight: 100;
     color: #FFF;
     height: auto;
@@ -363,6 +365,7 @@ body{
 /* Start PathFinder Column */   
 #projects .projectsSecondRow{
     margin-top: 50px;
+    margin-left: 0px;
 }
 
 #projects .pathFinderColumn{
@@ -417,6 +420,7 @@ body{
     margin-bottom: -12px;
     text-decoration: none;
     background-color: #FFF;
+    text-transform: uppercase;
 }
 
 #projects .pathFinderText h1{
@@ -428,15 +432,16 @@ body{
     font-style: normal;
     text-decoration: none;
     background-color: #FFF;
+    text-transform: uppercase;
 }
 
 #projects .pathFinderText p{
     width: 100%;
     height: 135px;
     padding-top: 8px;
-    font-weight: 300;
     color: #E8A94B;
     background-color: #2A2A2A;
+    font-family: 'Abel', sans-serif;
 }
 /* End PathFinder Column */
 
