@@ -222,11 +222,11 @@ body{
 /* Start About Page Watermark */
 #about .aboutWaterMark{
     top: -35px;
+    left: -10px;
     z-index: 0;
     width: 100%;
     height: 620px;
     font-size: 40rem;
-    overflow: hidden;
     user-select: none;
     position: absolute;
     color: rgba(232, 169, 75, .1);
@@ -266,16 +266,9 @@ body{
     overflow: hidden; 
 }
 
-#about .personDarkOverlay{
+#about .personLightOverlay{
     z-index: 1;
     width: 450px;
-    height: 505px;
-    position: absolute;
-    background-color: #2A2A2A;
-}
-
-#about .personLightOverlay{
-    width: 0px;
     height: 505px;
     position: absolute;
     background-color: #FFF;
@@ -292,20 +285,12 @@ body{
     left: 15px;
     padding: 0;
     width: 100%;
-    height: 400px;
+    height: 0px;
     max-width: 690px;
     max-height: 400px;
     overflow: hidden;
     text-align: center;
     background-color: #E8A94B;
-}
-
-#about .aboutDarkOverlay{
-    z-index: 1;
-    width: 690px;
-    height: 400px;
-    position: absolute;
-    background-color: #2A2A2A;
 }
 
 #about .aboutLightOverlay{
@@ -351,113 +336,66 @@ body{
 /* Start Projects Page */
 #projects{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    perspective: 1000;
+    -webkit-perspective: 1000;
     background-color: #E8A94B;
 }
 
-#projects .container{
-    top: 85px;
+#projects #projectsContainer{
+    width: 200%;
+    height: 100%;
+    position: relative;
 }
 
-#projects .projectsFirstColumn{
-    top: 85px;
-    margin: 0;
-    padding: 0;
+#projects .panel{
+    width: 50%;
+    float: left;
+    height: 100%;
 }
 
-#projects h2{
-    font-size: 3.5rem;
-    color: #2A2A2A;
-    font-weight: 300;
+#projects #projectsLanding{
+    background-color: #E8A94B;
+}
+
+#projects #projectsLanding h3{
+    width: 100%;
+    font-size: 35rem;
+    user-select: none;
+    padding-top: 156px;
+    margin-left: -50px;
+    color: rgba(42, 42, 42, .2);
     font-family: 'Roboto', sans-serif;
 }
 
-#projects h2 u{
-    text-decoration: none;
-    border-bottom: .25rem solid #FFF;
+#projects #pathFinderContainer{
+    position: relative;
+    background-color: #2A2A2A;
 }
 
-/* Start PathFinder Column */   
-#projects .projectsSecondRow{
-    margin-top: 50px;
-    margin-left: 0px;
+#projects #pathFinderContainer h6{
+    top: 16%;
+    z-index: 0;
+    font-size: 35rem;
+    user-select: none;
+    margin-left: 1250px;
+    color: rgba(232, 169, 65, .10);
+    font-family: 'Roboto', sans-serif;
 }
 
-#projects .pathFinderColumn{
-    margin: 0;
-    padding: 0;
-    max-width: 250px;
-    max-height: 260px;
-}
-
-#projects .pathFinderContainer{
-    width: 100%;
-    height: 100%;
+#projects #pathFinderContainer a{
+    z-index: 1;
+    max-width: 650px;
+    max-height: 600px;
+    position: absolute;
 }
 
 #projects #pathFinder{
     width: 100%;
+    height: auto fit-content;
 }
 
-#projects .pathFinderText{
-    top: 40px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    max-width: 0px;
-    overflow: hidden;
-    max-height: 180px;
-}
-
-#projects .pathFinderDarkOverlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: #2A2A2A;
-}
-
-#projects .pathFinderTitle{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    max-height: 45px;
-    font-family: 'Roboto', sans-serif;
-}
-
-#projects .pathFinderText h2{
-    z-index: 1;
-    width: 100%;
-    height: 35px;
-    font-weight: 300;
-    color: #2A2A2A;
-    font-size: 1.75rem;
-    margin-bottom: -12px;
-    text-decoration: none;
-    background-color: #FFF;
-    text-transform: uppercase;
-}
-
-#projects .pathFinderText h1{
-    top: 0px;
-    width: 100%;
-    font-size: 1.25rem;
-    color: #E8A94B;
-    font-weight: 300;
-    font-style: normal;
-    text-decoration: none;
-    background-color: #FFF;
-    text-transform: uppercase;
-}
-
-#projects .pathFinderText p{
-    width: 100%;
-    height: 135px;
-    padding-top: 8px;
-    color: #E8A94B;
-    background-color: #2A2A2A;
-    font-family: 'Abel', sans-serif;
-}
 /* End PathFinder Column */
 
 /* End Projects Page */

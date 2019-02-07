@@ -61,12 +61,10 @@
                 <div class="aboutFirstColumn col-md-12 col-lg-12 col-xl-12">
                     <div class="aboutSecondRow row">
                         <div id="personContainer" class="col">
-                            <div class="personDarkOverlay"></div>
                             <div class="personLightOverlay"></div>
                             <img src="images/aboutPerson.png" id="personPicture">
                         </div>
                         <div id="aboutTextContainer" class="col">
-                            <div class="aboutDarkOverlay"></div>
                             <div class="aboutLightOverlay"></div>
                             <h2>Victor Ragojos</h2>
                             <h1>Coding Enthusiast, Gamer, and Self-Learner</h1>
@@ -88,32 +86,16 @@
 
     <!-- Start Projects Page -->
     <div id="projects">
-        <div class="projectsContainer container">
-            <div class="projectsFirstRow row">
-                <div class="projectsFirstColumn col-12">
-                    <h2 class="text-center"><u>Projects</u></h2>
-                    <div class="projectsSecondRow row">
-                        <div class="pathFinderColumn col">
-                            <div class="pathFinderContainer">
-                                <a href="https://github.com/RagOfJoes/a-search-algorithm-visualization" target="_blank"><img
-                                        id="pathFinder" src="images/pathFinderJava.gif"></a>
-                            </div>
-                        </div>
-                        <div class="pathFinderText col text-center">
-                            <div class="pathFinderDarkOverlay"></div>
-                            <div class="pathFinderTitle">
-                                <h2>Pathfinder</h2>
-                                <h1>Java</h1>
-                            </div>
-                            <p>A visualization of the A* Search Algorithm
-                                which utilizes Java as the base core code
-                                and Java Swing for the visuals. The
-                                Insertion Sort Method is also utilized to
-                                sort through all the paths that are available
-                                and choose the most optimal path. </p>
-                        </div>
-                    </div>
+        <div id="projectsContainer">
+            <div id="projectsLanding" class="panel">
+                <h3>PROJECTS</h3>
+            </div>
+            <div id="pathFinderContainer" class="panel d-flex justify-content-center align-items-center">
+                <div class="waterMark">
+                    <h6>PATHFINDER</h6>
                 </div>
+                <a href="https://github.com/RagOfJoes/a-search-algorithm-visualization" target="_blank"><img id="pathFinder"
+                        src="images/pathFinderJava.gif"></a>
             </div>
         </div>
     </div>
