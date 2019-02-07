@@ -29,7 +29,7 @@ $(document).ready(function () {
     new ScrollMagic.Scene({
         triggerElement: '#projects',
         triggerHook: 'onLeave',
-        duration: '500%'
+        duration: '200%'
     })
         .addIndicators({
             name: 'test2',
