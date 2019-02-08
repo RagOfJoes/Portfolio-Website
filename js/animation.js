@@ -9,22 +9,3 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true
     })
 });
-
-$("#pathFinder").mouseover(function () {
-    projectOneAnim(true);
-}).mouseleave(function () {
-    projectOneAnim(false);
-});
-
-function projectOneAnim(isHover) {
-    var tween = new TimelineLite();
-    if (isHover) {
-        tween.to('.pathFinderDarkOverlay', .3, { width: '260px' }, 'together')
-            .to('.pathFinderText', .3, { maxWidth: '260px' }, 'together')
-            .to('.pathFinderDarkOverlay', .3, { height: '0px' });
-    } else {
-        tween.to('.pathFinderDarkOverlay', .3, { height: '100%' })
-            .to('.pathFinderText', .3, { maxWidth: '0px' }, 'together')
-            .to('.pathFinderText', .3, { maxWidth: '0px' }, 'together');
-    }
-}
