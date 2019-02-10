@@ -339,6 +339,8 @@ body{
     height: 100%;
     overflow: hidden;
     perspective: 1000;
+    max-height: 1080px;
+    background-size: cover;
     -webkit-perspective: 1000;
     background-color: #E8A94B;
 }
@@ -363,7 +365,6 @@ body{
     width: 100%;
     font-size: 35rem;
     user-select: none;
-    padding-top: 156px;
     margin-left: -50px;
     color: rgba(42, 42, 42, .2);
     font-family: 'Roboto', sans-serif;
@@ -375,18 +376,18 @@ body{
 }
 
 #projects #pathFinderContainer h6{
-    top: 16%;
     z-index: 0;
     left: -50px;
     font-size: 35rem;
     user-select: none;
+    margin-top: -337.5px;
     position: absolute;
     color: rgba(232, 169, 65, .10);
     font-family: 'Roboto', sans-serif;
 }
 
 #projects #pathFinderContainer a{
-    z-index: 1;
+    z-index: 2;
     max-width: 650px;
     max-height: 600px;
     position: absolute;
@@ -394,12 +395,72 @@ body{
 
 #projects #pathFinder{
     width: 100%;
+    opacity: .8;
     height: auto fit-content;
 }
 
+#projects .btn{
+    width: 100px;
+    height: 100px;
+}
+
+#projects .pathFinderTextContainer{
+    z-index: 3;
+    width: 580px;
+    height: 600px;
+    overflow: hidden;
+    max-width: 580px;
+    max-height: 600px;
+    position: relative;
+}
+
+#projects .pathFinderTextContainer a{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#projects .pathFinderText{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    color: #E8A94B;
+    user-select: none;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(42, 42, 42, .9);
+}
+
+#projects .pathFinderText h4{
+    height: 100px;
+    font-size: 5rem;
+    margin-bottom: -20px;
+}
+
+#projects .pathFinderText h3{
+    background-color: rgba(255, 255, 255, .3);
+    text-decoration: none;
+    font-style: normal;
+    color: #2A2A2A;
+    font-size: 3rem;
+    width: 100%;
+    
+}
+
+#projects .pathFinderText p{
+    font-size: 1.75rem;
+    line-height: 40px;
+    color: #FFF;
+}
 /* End PathFinder Column */
 
 /* End Projects Page */
+
+/* Start Contact Page */
+
+/* End Contact Page */
 
 /* Keyframe Animations */
 @keyframes homeArrow{
@@ -413,5 +474,19 @@ body{
         height: 47.3vh;
     } 100%{
         height: 47.4vh;
+    }
+}
+
+@keyframes pathFinderText{
+    0%{
+        opacity: .8;
+    } 25%{
+        opacity: .6;
+    } 50%{
+        opacity: .4;
+    } 75%{
+        opacity: .2;
+    } 100%{
+        opacity: 0;
     }
 }

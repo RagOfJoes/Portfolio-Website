@@ -10,21 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 });
 
-$("#pathFinder").mouseover(function () {
-    projectOneAnim(true);
+var pathFinderText = new TimelineLite();
+$('.pathFinderTextContainer').mouseover(function () {
+    pathFinderText.to('.pathFinderText', .8, { autoAlpha: '0', y: '-600px' });
 }).mouseleave(function () {
-    projectOneAnim(false);
-});
-
-function projectOneAnim(isHover) {
-    var tween = new TimelineLite();
-    if (isHover) {
-        tween.to('.pathFinderDarkOverlay', .3, { width: '260px' }, 'together')
-            .to('.pathFinderText', .3, { maxWidth: '260px' }, 'together')
-            .to('.pathFinderDarkOverlay', .3, { height: '0px' });
-    } else {
-        tween.to('.pathFinderDarkOverlay', .3, { height: '100%' })
-            .to('.pathFinderText', .3, { maxWidth: '0px' }, 'together')
-            .to('.pathFinderText', .3, { maxWidth: '0px' }, 'together');
-    }
-}
+    pathFinderText.to('.pathFinderText', .8, { autoAlpha: '1', y: '0px', ease: Elastic.easeOut.config(.4, .2) });
+})
