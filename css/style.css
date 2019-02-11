@@ -229,6 +229,7 @@ body{
     font-size: 40rem;
     user-select: none;
     position: absolute;
+    -webkit-user-select: none;
     color: rgba(232, 169, 75, .1);
 }
 /* End About Page Watermark */
@@ -367,6 +368,7 @@ body{
     font-size: 35rem;
     user-select: none;
     margin-left: -50px;
+    -webkit-user-select: none;
     color: rgba(42, 42, 42, .2);
     font-family: 'Roboto', sans-serif;
 }
@@ -383,8 +385,9 @@ body{
     left: -52px;
     font-size: 35rem;
     user-select: none;
+    position: absolute;    
     margin-top: -337.5px;
-    position: absolute;
+    -webkit-user-select: none;
     color: rgba(232, 169, 65, .10);
     font-family: 'Roboto', sans-serif;
 }
@@ -432,6 +435,7 @@ body{
     user-select: none;
     text-align: center;
     padding-top: 100px;
+    -webkit-user-select: none;
     font-family: 'Roboto', sans-serif;
     background-color: rgba(42, 42, 42, .9);
 }
@@ -462,6 +466,40 @@ body{
 /* End Projects Page */
 
 /* Start Contact Page */
+#contact{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    max-height: 600px;
+    position: relative;
+    background: #2A2A2A;
+}
+
+#contact .contactWatermark{
+    top: -5px;
+    left: -50px;
+    font-size: 40rem;
+    user-select: none;
+    position: absolute;
+    -webkit-user-select: none;
+    color: rgba(232, 169, 65, .10);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Start Contact Button */
+#contact .contactButton{
+    top: 265px;
+}
+
+#contact .contactMe{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background: #2A2A2A;
+    color: rgba(232, 169, 65, .5);
+    font-family: 'Roboto', sans-serif;
+}
+/* End Contact Button */
 
 /* End Contact Page */
 
@@ -477,19 +515,5 @@ body{
         height: 47.3vh;
     } 100%{
         height: 47.4vh;
-    }
-}
-
-@keyframes pathFinderText{
-    0%{
-        opacity: .8;
-    } 25%{
-        opacity: .6;
-    } 50%{
-        opacity: .4;
-    } 75%{
-        opacity: .2;
-    } 100%{
-        opacity: 0;
     }
 }
