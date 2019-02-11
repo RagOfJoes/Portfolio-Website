@@ -357,6 +357,7 @@ body{
     height: 100%;
 }
 
+/* Start Projects Landing Page */
 #projects #projectsLanding{
     background-color: #E8A94B;
 }
@@ -369,7 +370,9 @@ body{
     color: rgba(42, 42, 42, .2);
     font-family: 'Roboto', sans-serif;
 }
+/* End Projects Landing Page */
 
+/* Start PathFinder Project */
 #projects #pathFinderContainer{
     position: relative;
     background-color: #2A2A2A;
@@ -377,7 +380,7 @@ body{
 
 #projects #pathFinderContainer h6{
     z-index: 0;
-    left: -50px;
+    left: -52px;
     font-size: 35rem;
     user-select: none;
     margin-top: -337.5px;
