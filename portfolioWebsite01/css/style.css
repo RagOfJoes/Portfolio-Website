@@ -1,0 +1,535 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* End Reset Stylesheet */
+
+/* Start My Code */
+html, body{
+    height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Start Nav Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.015vw;
+    font-size: 1.45rem;
+    font-weight: 400;
+    height: 100px;
+    width: 100%;
+}
+
+#navBar ul{
+    padding-left: 3.25vw;
+}
+
+#navBar ul li{
+    margin-top: 2%;
+    margin-right: 2.5vw;
+}
+
+.navbar a{
+    color: #a3a3a3;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav a:hover{
+    transform: scale(1.25, 1.25);
+}
+/* End Nav bar */
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Home Page */
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Start Landing Page */
+#home .landingBG{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/homePageBG.png');
+}
+
+#home .landingOverlay{
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(90, 49, 17, .3);
+}
+/* End Landing Page */
+
+/* Start Caption & Arrow */
+#home .caption{
+    top: 40%;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+}
+
+#home .caption h2{
+    height: 47vh;
+    color: white;
+    font-size: 6rem;
+    animation-duration: .55s;
+    animation-name: homeArrow;
+    animation-direction: alternate;
+    font-family: 'Roboto', sans-serif;
+    animation-iteration-count: infinite;
+}
+
+#home .caption .btn{
+    border: none;
+    content: url('../images/homeInnerArrows.png');
+}
+
+/* End Caption & Arrow */
+
+/* End Home Page */
+
+/* Start About Page */
+#about{
+    z-index: -1;
+    width: 100%;
+    height: 685px;
+    overflow: hidden;
+    max-height: 685px;
+    position: relative;
+    background-color: #2A2A2A;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Start About Page Watermark */
+#about .aboutWaterMark{
+    top: -35px;
+    left: -10px;
+    z-index: 0;
+    width: 100%;
+    height: 620px;
+    font-size: 40rem;
+    user-select: none;
+    position: absolute;
+    -webkit-user-select: none;
+    color: rgba(232, 169, 75, .1);
+}
+/* End About Page Watermark */
+
+#about .aboutContainer{
+    width: 100%;
+    height: 100%;
+    max-height: 505px;
+}
+
+#about .col-md-12{
+    top: 90px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+
+#about .col{
+    width: 100%;
+    overflow: hidden;
+}
+
+#about .aboutFirstColumn .aboutSecondRow{
+    width: 100%;
+    max-width: 1140px;
+}
+
+#about #personContainer{
+    left: 15px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    max-height: 505px;
+    overflow: hidden; 
+}
+
+#about .personLightOverlay{
+    z-index: 1;
+    width: 450px;
+    height: 505px;
+    position: absolute;
+    background-color: #FFF;
+}
+
+#about #personPicture{
+    width: 100%;
+    height: auto;
+    max-height: 505px;
+}
+
+#about #aboutTextContainer{
+    top: 53px;
+    left: 15px;
+    padding: 0;
+    width: 100%;
+    height: 0px;
+    max-width: 690px;
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #E8A94B;
+}
+
+#about .aboutLightOverlay{
+    width: 690px;
+    height: 400px;
+    position: absolute;
+    background-color: #FFF;
+}
+
+#about #aboutTextContainer h2{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 300;
+    padding-top: 15px;
+    margin-bottom: -14px;
+    letter-spacing: -2.5px;
+    text-transform: uppercase;
+}
+
+#about #aboutTextContainer h1{
+    height: 40px;
+    font-weight: 300;
+    padding-top: 9px;
+    color: #E8A94B;
+    font-size: 1.25rem;
+    background: #2A2A2A;
+    letter-spacing: -.75px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about #aboutTextContainer p{
+    font-family: 'Abel', sans-serif;
+    padding-top: 16px;
+    font-size: 1.75rem;
+    font-weight: 100;
+    color: #FFF;
+    height: auto;
+    width: 100%;
+}
+/* End About Page */
+
+/* Start Projects Page */
+#projects{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    perspective: 1000;
+    max-height: 1080px;
+    background-size: cover;
+    -webkit-perspective: 1000;
+    background-color: #E8A94B;
+}
+
+#projects #projectsContainer{
+    width: 200%;
+    height: 100%;
+    position: relative;
+}
+
+#projects .panel{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+/* Start Projects Landing Page */
+#projects #projectsLanding{
+    background-color: #E8A94B;
+}
+
+#projects #projectsLanding h3{
+    width: 100%;
+    font-size: 35rem;
+    user-select: none;
+    margin-left: -50px;
+    -webkit-user-select: none;
+    color: rgba(42, 42, 42, .2);
+    font-family: 'Roboto', sans-serif;
+}
+/* End Projects Landing Page */
+
+/* Start PathFinder Project */
+#projects #pathFinderContainer{
+    position: relative;
+    background-color: #2A2A2A;
+}
+
+#projects #pathFinderContainer h6{
+    z-index: 0;
+    left: -52px;
+    font-size: 35rem;
+    user-select: none;
+    position: absolute;    
+    margin-top: -337.5px;
+    -webkit-user-select: none;
+    color: rgba(232, 169, 65, .10);
+    font-family: 'Roboto', sans-serif;
+}
+
+#projects #pathFinderContainer a{
+    z-index: 2;
+    max-width: 650px;
+    max-height: 600px;
+    position: absolute;
+}
+
+#projects #pathFinder{
+    width: 100%;
+    opacity: .8;
+    height: auto fit-content;
+}
+
+#projects .btn{
+    width: 100px;
+    height: 100px;
+}
+
+#projects .pathFinderTextContainer{
+    z-index: 3;
+    width: 580px;
+    height: 600px;
+    overflow: hidden;
+    max-width: 580px;
+    max-height: 600px;
+    position: relative;
+}
+
+#projects .pathFinderTextContainer a{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#projects .pathFinderText{
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    color: #E8A94B;
+    user-select: none;
+    text-align: center;
+    padding-top: 100px;
+    -webkit-user-select: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(42, 42, 42, .9);
+}
+
+#projects .pathFinderText h4{
+    height: 100px;
+    font-size: 5rem;
+    margin-bottom: -20px;
+}
+
+#projects .pathFinderText h3{
+    background-color: rgba(255, 255, 255, .3);
+    text-decoration: none;
+    font-style: normal;
+    color: #2A2A2A;
+    font-size: 3rem;
+    width: 100%;
+    
+}
+
+#projects .pathFinderText p{
+    font-size: 1.75rem;
+    line-height: 40px;
+    color: #FFF;
+}
+/* End PathFinder Column */
+
+/* End Projects Page */
+
+/* Start Contact Page */
+#contact{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    max-height: 600px;
+    position: relative;
+    background: #2A2A2A;
+}
+
+#contact .contactWatermark{
+    top: -5px;
+    left: -50px;
+    font-size: 40rem;
+    user-select: none;
+    position: absolute;
+    -webkit-user-select: none;
+    color: rgba(232, 169, 65, .10);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Start Contact Button */
+#contact .col{
+    top: 265px;
+    max-width: 200px;
+}
+
+#contact .buttonContainer{
+    left: 0px;
+    width: 100%;
+    max-width: 200px;
+}
+
+#contact .buttonBorder{
+    width: 100%;
+    overflow: hidden;
+}
+
+#contact .col-4 a{
+    top: 25px;
+    left: 55px;
+    font-size: 2rem;
+    position: absolute;
+    text-decoration: none;
+    color: rgba(232, 169, 65, .5);
+    font-family: 'Roboto', sans-serif;
+}
+/* End Contact Button */
+
+/* End Contact Page */
+
+/* Keyframe Animations */
+@keyframes homeArrow{
+    0%{
+        height: 47vh;
+    } 25%{
+        height: 47.1vh;
+    } 50%{
+        height: 47.2vh;
+    } 75%{
+        height: 47.3vh;
+    } 100%{
+        height: 47.4vh;
+    }
+}
