@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="268" height="574" viewBox="0 0 268 574">
+    <g transform="translate(1.5 137.5)">
+            <g transform="translate(0 399.5)">
+            <path d="M0,0V35" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+            <path d="M0,0V35" transform="translate(35.5 35.5) rotate(90)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+        </g>
+        <g transform="translate(229.5 399.5)">
+            <path d="M0,0V35" transform="translate(35.5)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+            <path d="M0,35V0" transform="translate(35 35.5) rotate(90)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+        </g>
+        <g transform="translate(265 -100.5) rotate(180)">
+            <path d="M0,0V35" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+            <path d="M0,0V35" transform="translate(35.5 35.5) rotate(90)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+        </g>
+        <g transform="translate(35.5 -136) rotate(90)">
+            <path d="M0,0V35" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+            <path d="M0,0V35" transform="translate(35.5 35.5) rotate(90)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="3"/>
+        </g>
+    </g>
+</svg>

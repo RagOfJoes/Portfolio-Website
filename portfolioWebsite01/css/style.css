@@ -469,6 +469,7 @@ body{
 #contact{
     margin: 0;
     padding: 0;
+    z-index: -1;
     width: 100%;
     height: 700px;
     overflow: hidden;
@@ -490,27 +491,36 @@ body{
 
 
 /* Start Contact Button */
-#contact .col{
-    top: 265px;
-    max-width: 200px;
+#contact .container{
+    width: 100%;
+    margin-top: 256px;
 }
 
 #contact .buttonContainer{
-    left: 0px;
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
 #contact .buttonBorder{
     width: 100%;
-    overflow: hidden;
+    height: 100%;
 }
 
-#contact .col-4 a{
-    top: 25px;
-    left: 55px;
-    font-size: 2rem;
+#contact .textContainer{
+    top: 50%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
     position: absolute;
+    transform: translateY(-50%);
+}
+
+#contact .footerButton{
+    overflow: hidden;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     text-decoration: none;
     color: rgba(232, 169, 65, .5);
     font-family: 'Roboto', sans-serif;
