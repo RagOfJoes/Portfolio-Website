@@ -3,12 +3,12 @@ $(document).ready(function () {
 
     // Start About Tween
     var aboutTween = new TimelineLite();
-    aboutTween.to('#aboutTextContainer', .35, { height: '400px', ease: Sine.easeOut }, 'first')
-        .from('.aboutLightOverlay', .35, { height: '0px', ease: Sine.easeOut }, 'first')
-        .from('#personPicture', .35, { height: '0px', ease: Sine.easeOut }, 'first')
-        .from('.personLightOverlay', .35, { height: '0px', ease: Sine.easeOut }, 'first')
-        .to('.personLightOverlay', .35, { width: '0px', ease: Sine.easeOut }, 'second')
-        .to('.aboutLightOverlay', .35, { width: '0px', ease: Sine.easeOut }, 'second');
+    aboutTween.to('#aboutTextContainer', .3, { height: '400px', ease: Power1.easeOut }, 'first')
+        .from('.aboutLightOverlay', .3, { height: '0px', ease: Power1.easeOut }, 'first')
+        .from('#personPicture', .3, { height: '0px', ease: Power1.easeOut }, 'first')
+        .from('.personLightOverlay', .3, { height: '0px', ease: Power1.easeOut }, 'first')
+        .to('.personLightOverlay', .3, { width: '0px', ease: Power1.easeOut }, 'second')
+        .to('.aboutLightOverlay', .3, { width: '0px', ease: Power1.easeOut }, 'second');
 
     new ScrollMagic.Scene({
         triggerElement: '#about #personContainer',

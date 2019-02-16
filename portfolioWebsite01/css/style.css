@@ -478,27 +478,43 @@ body{
     background: #2A2A2A;
 }
 
-#contact .contactWatermark{
-    top: -5px;
-    left: -50px;
-    font-size: 40rem;
-    user-select: none;
-    position: absolute;
-    -webkit-user-select: none;
-    color: rgba(232, 169, 65, .10);
-    font-family: 'Roboto', sans-serif;
-}
-
-
 /* Start Contact Button */
 #contact .container{
     width: 100%;
     margin-top: 256px;
 }
 
+#contact .footerBG{
+    top: -280px;
+    z-index: -1;
+    opacity: .6;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact .homeBG{
+    background-position-y: 50px;
+    background-position-x: center;
+    background-image: url('../images/LandingPage.png');
+}
+
+#contact .contactBG{
+    background-position-y: 50px;
+    background-position-x: center;
+    background-image: url('../images/ContactBG.png');
+}
+
+#contact .socialBG{
+    background-position-y: 35px;
+    background-position-x: center;
+    background-image: url('../images/SocialBG.png');
+}
+
 #contact .buttonContainer{
     width: 200px;
-    cursor: pointer;
     overflow: hidden;
     position: relative;
 }
@@ -518,11 +534,11 @@ body{
 }
 
 #contact .footerButton{
+    color: #89693A;
     overflow: hidden;
     font-size: 1.5rem;
     letter-spacing: 1px;
     text-decoration: none;
-    color: rgba(232, 169, 65, .5);
     font-family: 'Roboto', sans-serif;
 }
 /* End Contact Button */

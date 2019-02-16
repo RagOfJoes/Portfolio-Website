@@ -19,10 +19,9 @@ $('.pathFinderTextContainer').mouseover(function () {
 
 $('.buttonContainer').each(function (index, element) {
     var contactAnim = new TimelineLite({ paused: true });
-    contactAnim.to($(element), .2, { width: '60%' });
-    contactAnim.to($(element).find('.footerButton'), .5, { letterSpacing: '.4em' }, 'together');
-    contactAnim.to($(element).find('.footerButton'), .2, { autoAlpha: '0' }, 'together');
-
+    contactAnim.to($(element), .2, { width: '60%' }, 'together');
+    contactAnim.from($(element).prev(), .15, { width: '0%' }, 'together');
+    contactAnim.to($(element).find('.footerButton'), .2, { letterSpacing: '.15em' }, 'together');
     element.animation = contactAnim;
 });
 
