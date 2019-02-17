@@ -184,6 +184,7 @@ body{
     top: 40%;
     z-index: 1;
     width: 100%;
+    opacity: .9;
     position: absolute;
 }
 
@@ -237,11 +238,11 @@ body{
 #about .aboutContainer{
     width: 100%;
     height: 100%;
+    margin-top: 90px;
     max-height: 505px;
 }
 
 #about .col-md-12{
-    top: 90px;
     margin: 0;
     padding: 0;
     overflow: hidden;    
@@ -277,7 +278,7 @@ body{
 
 #about #personPicture{
     width: 100%;
-    height: auto;
+    max-width: 450px;
     max-height: 505px;
 }
 
@@ -338,24 +339,22 @@ body{
 #projects{
     width: 100%;
     height: 100%;
-    overflow: hidden;
     perspective: 1000;
     max-height: 1080px;
-    background-size: cover;
     -webkit-perspective: 1000;
     background-color: #E8A94B;
 }
 
 #projects #projectsContainer{
     width: 200%;
-    height: 100%;
+    height: 100vh;
     position: relative;
 }
 
 #projects .panel{
     width: 50%;
     float: left;
-    height: 100%;
+    height: 100vh;
 }
 
 /* Start Projects Landing Page */
@@ -377,6 +376,7 @@ body{
 /* Start PathFinder Project */
 #projects #pathFinderContainer{
     position: relative;
+    background-size: cover;
     background-color: #2A2A2A;
 }
 
@@ -475,51 +475,33 @@ body{
     overflow: hidden;
     max-height: 600px;
     position: relative;
-    background: #2A2A2A;
+    background-color: #2A2A2A;
+}
+
+#contact .contactIMG{
+    width: 100%;
+    opacity: .15;
+    height: 700px;
+    position: absolute;
+    background-image: linear-gradient(#2A2A2A, #E8A94B);
+    background-image: -webkit-linear-gradient(#2A2A2A, #E8A94B);
 }
 
 /* Start Contact Button */
 #contact .container{
     width: 100%;
-    margin-top: 256px;
-}
-
-#contact .footerBG{
-    top: -280px;
-    z-index: -1;
-    opacity: .6;
-    width: 100%;
-    height: 550px;
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#contact .homeBG{
-    background-position-y: 50px;
-    background-position-x: center;
-    background-image: url('../images/LandingPage.png');
-}
-
-#contact .contactBG{
-    background-position-y: 50px;
-    background-position-x: center;
-    background-image: url('../images/ContactBG.png');
-}
-
-#contact .socialBG{
-    background-position-y: 35px;
-    background-position-x: center;
-    background-image: url('../images/SocialBG.png');
+    margin-top: 270px;
 }
 
 #contact .buttonContainer{
+    z-index: 2;
     width: 200px;
     overflow: hidden;
     position: relative;
 }
 
 #contact .buttonBorder{
+    opacity: .6;
     width: 100%;
     height: 100%;
 }
