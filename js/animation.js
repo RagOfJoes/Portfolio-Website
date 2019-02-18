@@ -18,18 +18,3 @@ $('.pathFinderTextContainer').mouseover(function () {
     pathFinderText.to('.pathFinderText', .3, { autoAlpha: '1', y: '0px', ease: Elastic.easeOut.config(.4, .5) });
 });
 // End PathFinder Animation
-
-// Start Contact Animation
-$('.buttonContainer').each(function (index, element) {
-    var contactAnim = new TimelineLite({ paused: true });
-    contactAnim.to($(element), .2, { width: '60%' }, 'together');
-    contactAnim.to($(element).find('.footerButton'), .2, { letterSpacing: '.15em' }, 'together');
-    element.animation = contactAnim;
-});
-
-$('.buttonContainer').mouseenter(function () {
-    this.animation.play();
-}).mouseleave(function () {
-    this.animation.reverse();
-});
-// End Contact Animation

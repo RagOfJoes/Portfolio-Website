@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     new ScrollMagic.Scene({
         triggerElement: '#about #personContainer',
-        triggerHook: 0.4,
+        triggerHook: 0.4
     })
         .setTween(aboutTween)
         .addTo(controller);

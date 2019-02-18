@@ -105,9 +105,6 @@ input, select {
 /* Start My Code */
 html, body{
     height: 100%;
-}
-
-html{
     scroll-behavior: smooth;
 }
 
@@ -119,12 +116,14 @@ body{
 
 /* Start Nav Bar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: transparent !important;
     font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     letter-spacing: -.015vw;
+    background-size: cover;
     font-size: 1.45rem;
     font-weight: 400;
+    overflow: hidden;
     height: 100px;
     width: 100%;
 }
@@ -140,6 +139,7 @@ body{
 
 .navbar a{
     color: #a3a3a3;
+    transition: .1s linear all;
 }
 
 .navbar-nav .nav-link.active,
@@ -192,6 +192,7 @@ body{
     height: 47vh;
     color: white;
     font-size: 6rem;
+    font-weight: 100;
     animation-duration: .55s;
     animation-name: homeArrow;
     animation-direction: alternate;
@@ -339,7 +340,7 @@ body{
 #projects{
     width: 100%;
     height: 100%;
-    perspective: 1000;
+        perspective: 1000;
     max-height: 1080px;
     -webkit-perspective: 1000;
     background-color: #E8A94B;
@@ -466,64 +467,135 @@ body{
 /* End Projects Page */
 
 /* Start Contact Page */
+
+/* Start Contact Background */
 #contact{
     margin: 0;
     padding: 0;
     z-index: -1;
     width: 100%;
-    height: 700px;
+    height: 600px;
     overflow: hidden;
     max-height: 600px;
-    position: relative;
     background-color: #2A2A2A;
 }
 
-#contact .contactIMG{
+#contact .contactGradient{
     width: 100%;
     opacity: .15;
-    height: 700px;
+    height: 600px;
     position: absolute;
     background-image: linear-gradient(#2A2A2A, #E8A94B);
     background-image: -webkit-linear-gradient(#2A2A2A, #E8A94B);
 }
+/* End Contact Background */
 
-/* Start Contact Button */
-#contact .container{
-    width: 100%;
-    margin-top: 270px;
+/* Start Contact Container */
+#contact .container-fluid{
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
+/* End Contact Container */
 
-#contact .buttonContainer{
-    z-index: 2;
-    width: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
-#contact .buttonBorder{
-    opacity: .6;
+/* Start Contact Rows */
+#contact .row{ 
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
 }
+/* End Contact Rows */
 
-#contact .textContainer{
-    top: 50%;
+/* Start Contact Arrow */
+#contact .contactArrow{
+    margin: 0;
+    top: 450px;
+    left: 70px;
+    padding: 0;
+    opacity: .7;
     width: 100%;
-    overflow: hidden;
-    text-align: center;
-    position: absolute;
-    transform: translateY(-50%);
+    height: 100%;
+    max-width: 40px;
+    max-height: 66px;
+    transition: .3s linear all;
+    animation: contactArrow .4s alternate-reverse infinite;
 }
 
-#contact .footerButton{
-    color: #89693A;
-    overflow: hidden;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    text-decoration: none;
+#contact .contactArrow:hover{
+    opacity: 1;
+}
+/* End Contact Arrow */
+
+/* Start Contact Form */
+#contact .contactForm{
+    margin: 0;
+    padding: 0;
+    top: 100px;
+    opacity: .5;
+    width: 785px;
+    height: 350px;
+    max-width: 785px;
+    max-height: 350px;
+    margin-left: 328px;
+}
+
+#contact .formContainer{
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+
+#contact .contactForm h2{
+    width: 26px;
+    opacity: .8;
+    font-weight: 100;
+    color: #2A2A2A;
+    user-select: none;
+    text-align: center;
+    font-size: 1.85rem;
+    -webkit-user-select: none;
+    overflow-wrap: break-word;
+    background-color: #E8A94B;
     font-family: 'Roboto', sans-serif;
 }
-/* End Contact Button */
+
+#contact .contactForm h3{
+    width: 100%;
+    opacity: 1;
+    height: 100%;
+    color: #FFF;
+    margin-top: 45px;
+    font-weight: 100;
+    max-width: 280px;
+    max-height: 20px;
+    user-select: none;
+    font-size: 1.25rem;
+    -webkit-user-select: none;
+    font-family: 'Roboto', sans-serif;
+}
+/* End Contact Form */
+
+/* Start Contact Social Media */
+#contact .socialMedia {
+    padding: 0;
+    max-width: 295px;
+    margin-top: 100px;
+    margin-left: 61px;
+}
+
+#contact .socialMedia img{
+    opacity: .5;
+    max-width: 55px;
+    max-height: 55px;
+    transition: .1s linear all;
+}
+
+#contact .socialMedia img:hover{
+    opacity: .9;
+    transform: scale(1.08);
+}
+/* End Contact Social Media */
 
 /* End Contact Page */
 
@@ -539,5 +611,19 @@ body{
         height: 47.3vh;
     } 100%{
         height: 47.4vh;
+    }
+}
+
+@keyframes contactArrow{
+    0%{
+        top: 450px;
+    } 25%{
+        top: 449px;
+    } 50%{
+        top: 448px;
+    } 75%{
+        top: 447px;
+    } 100%{
+        top: 446px;
     }
 }

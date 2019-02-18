@@ -14,34 +14,34 @@
 </head>
 
 <body data-spy="scroll" data-target="#navBar">
+    <!-- Start Nav Bar -->
+    <div class="navContainer">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a id="homeNav" href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="aboutNav" href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="projectsNav" href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contactNav" href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End Nav Bar -->
+
     <!-- Start Home Page -->
     <div id="home" class="container-fluid">
-        <!-- Start Nav Bar -->
-        <div class="navContainer">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navBar">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a id="homeNav" href="#home" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="aboutNav" href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="projectsNav" href="#projects" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="contactNav" href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- End Nav Bar -->
-
         <div class="landingBG">
             <div class="landingOverlay"></div>
         </div>
@@ -115,37 +115,27 @@
 
     <!-- Start Contact Page -->
     <div id="contact">
-        <div class="contactIMG"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-4 homeButton text-center">
-                    <div class="buttonContainer mx-auto">
-                        <a href="#home">
-                            <img src="images/Border.svg" class="buttonBorder">
-                            <div class="textContainer">
-                                <p class="homeFooter footerButton">HOME</p>
+        <div class="contactGradient"></div>
+        <div class="container-fluid">
+            <div class="row contactFirstRow">
+                <div class="col-12">
+                    <div class="row contactSecondRow">
+                        <div class="contactArrow col">
+                            <a href="#home"><img src="images/Contact Arrow.png" class="contactArrow"></a>
+                        </div>
+                        <div class="contactForm col">
+                            <div class="formContainer">
+                                <h2>GET IN TOUCH</h2>
                             </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4 contactButton text-center">
-                    <div class="buttonContainer mx-auto">
-                        <a href="">
-                            <img src="images/Border.svg" class="buttonBorder">
-                            <div class="textContainer">
-                                <p class="contactMe footerButton">CONTACT ME</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4 socialButton text-center">
-                    <div class="buttonContainer mx-auto">
-                        <a href="">
-                            <img src="images/Border.svg" class="buttonBorder">
-                            <div class="textContainer">
-                                <p class="socialMedia footerButton">SOCIAL MEDIA</p>
-                            </div>
-                        </a>
+                            <h3>CREATED BY VICTOR RAGOJOS</h3>
+                        </div>
+                        <div class="socialMedia col">
+                            <a href=""><img src="images/githubPicture.png"></a>
+                            <a href=""><img src="images/instagramPicture.png"></a>
+                            <a href=""><img src="images/linkedInPicture.png"></a>
+                            <a href=""><img src="images/spotifyPicture.png"></a>
+                            <a href=""><img src="images/twitterPicture.png"></a>
+                        </div>
                     </div>
                 </div>
             </div>
