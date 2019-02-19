@@ -121,9 +121,28 @@
                 <div class="col-12">
                     <div class="row contactSecondRow">
                         <div class="contactForm col">
-                            <div class="formContainer">
-                                <h2>GET IN TOUCH</h2>
-                            </div>
+                            <h2>GET IN TOUCH</h2>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <input type="text" name="userName" placeholder="NAME..." required>
+                                    </div>
+                                    <div class="form-group col">
+                                        <input type="email" name="userEmail" placeholder="EMAIL..." required>
+                                    </div>
+                                    <div class="form-group col">
+                                        <input type="tel" name="userNumber" required
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                            title="Please follow format: 123-456-7890" placeholder="PHONE NUMBER...">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <textarea class="form-control" placeholder="MESSAGE..."
+                                            id="userMessage"></textarea>
+                                    </div>
+                                </div>
+                            </form>
                             <h3>CREATED BY VICTOR RAGOJOS</h3>
                         </div>
                         <div class="socialMedia col">

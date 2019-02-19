@@ -510,20 +510,84 @@ body{
     margin: 0;
     padding: 0;
     top: 100px;
-    opacity: .5;
-    width: 785px;
+    opacity: .4;
+    width: 100%;
     height: 350px;
     max-width: 785px;
     max-height: 350px;
     margin-left: 366px;
-}
-
-#contact .formContainer{
-    opacity: .7;
-    width: 100%;
-    height: 100%;
     background: #E8A94B;
 }
+
+/* Start Actual Form */
+#contact .contactForm form{
+    margin: 0;
+    font-size: 1rem;
+    max-width: 675px;
+    margin-left: 60px;
+    margin-top: -320px;
+    margin-right: 60px;
+}
+
+#contact .contactForm input{
+    border: 0;
+    opacity: 1;
+    width: 100%;
+    font-weight: 300;
+    text-align: center;
+    background-color: #E8A94B;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #2A2A2A;
+}
+
+#contact .contactForm input:focus{
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #2A2A2A;
+}
+
+#contact .contactForm input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
+#contact .contactForm input::-webkit-input-placeholder{
+    color: #2A2A2A;
+}
+
+#contact .contactForm #userMessage{
+    opacity: 1;
+    width: 100%;
+    resize: none;
+    outline: none;
+    height: 225px;
+    font-weight: 300;
+    color: #2A2A2A;
+    border-radius: 0%;
+    max-height: 250px;
+    border: 1px solid #2A2A2A;
+    background-color: #E8A94B;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contact .contactForm input[type='tel']:focus:invalid{
+    background-color: rgba(255, 0, 0, .7);
+}
+
+#contact .contactForm #userMessage:focus{
+    box-shadow: none;
+    outline: none !important;
+    -webkit-box-shadow: none;
+}
+
+#contact .contactForm #userMessage:focus::-webkit-input-placeholder{
+    content: '101-102-9023';
+}
+
+#contact .contactForm #userMessage::-webkit-input-placeholder{
+    color: #2A2A2A;
+    font-size: 1rem;
+}
+/* End Actual Form */
 
 #contact .contactForm h2{
     opacity: 1;
@@ -545,7 +609,7 @@ body{
     opacity: 1;
     height: 100%;
     color: #FFF;
-    margin-top: 45px;
+    margin-top: 65px;
     font-weight: 100;
     max-width: 280px;
     max-height: 20px;
@@ -565,7 +629,7 @@ body{
     max-height: 62px;
     overflow: hidden;
     margin-top: 100px;
-    margin-left: 68px;
+    margin-left: 102px;
 }
 
 #contact .socialImage {
