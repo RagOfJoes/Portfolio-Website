@@ -193,18 +193,23 @@ body{
     color: white;
     font-size: 6rem;
     font-weight: 100;
+    user-select: none;
     animation-duration: .55s;
     animation-name: homeArrow;
+    -webkit-user-select: none;
     animation-direction: alternate;
     font-family: 'Roboto', sans-serif;
     animation-iteration-count: infinite;
 }
 
-#home .caption .btn{
-    border: none;
-    content: url('../images/homeInnerArrows.png');
+#home .caption img{
+    opacity: .7;
+    transition: .3s linear all;
 }
 
+#home .caption img:hover{
+    opacity: 1;
+}
 /* End Caption & Arrow */
 
 /* End Home Page */
@@ -262,19 +267,12 @@ body{
 #about #personContainer{
     left: 15px;
     padding: 0;
+    opacity: 1;
     width: 100%;
     height: 100%;
     max-width: 450px;
     max-height: 505px;
     overflow: hidden; 
-}
-
-#about .personLightOverlay{
-    z-index: 1;
-    width: 450px;
-    height: 505px;
-    position: absolute;
-    background-color: #FFF;
 }
 
 #about #personPicture{
@@ -287,26 +285,22 @@ body{
     top: 53px;
     left: 15px;
     padding: 0;
+    opacity: 0;
     width: 100%;
     height: 0px;
     max-width: 690px;
     max-height: 400px;
     overflow: hidden;
+    user-select: none;
     text-align: center;
-    background-color: #E8A94B;
-}
-
-#about .aboutLightOverlay{
-    width: 690px;
-    height: 400px;
-    position: absolute;
-    background-color: #FFF;
+    -webkit-user-select: none;
+    background-color: rgba(232, 169, 75, .57);
 }
 
 #about #aboutTextContainer h2{
-    color: #FFF;
     font-size: 4rem;
     font-weight: 300;
+    color: #2A2A2A;
     padding-top: 15px;
     margin-bottom: -14px;
     letter-spacing: -2.5px;
@@ -317,20 +311,21 @@ body{
     height: 40px;
     font-weight: 300;
     padding-top: 9px;
-    color: #E8A94B;
     font-size: 1.25rem;
     background: #2A2A2A;
     letter-spacing: -.75px;
     text-transform: uppercase;
+    color: rgba(232, 169, 75, .5);
     font-family: 'Roboto', sans-serif;
 }
 
 #about #aboutTextContainer p{
-    font-family: 'Abel', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+    font-size: 1.7rem;
     padding-top: 16px;
-    font-size: 1.75rem;
-    font-weight: 100;
-    color: #FFF;
+    color: #2A2A2A;
+    font-weight: 300;
     height: auto;
     width: 100%;
 }
@@ -340,10 +335,10 @@ body{
 #projects{
     width: 100%;
     height: 100%;
-        perspective: 1000;
+    perspective: 1000;
     max-height: 1080px;
     -webkit-perspective: 1000;
-    background-color: #E8A94B;
+    background: #AF8444;
 }
 
 #projects #projectsContainer{
@@ -360,16 +355,17 @@ body{
 
 /* Start Projects Landing Page */
 #projects #projectsLanding{
-    background-color: #E8A94B;
+    background-color: #AF8444;
 }
 
 #projects #projectsLanding h3{
     width: 100%;
+    opacity: .4;
+    color: #E8A94B;
     font-size: 35rem;
     user-select: none;
     margin-left: -50px;
     -webkit-user-select: none;
-    color: rgba(42, 42, 42, .2);
     font-family: 'Roboto', sans-serif;
 }
 /* End Projects Landing Page */
@@ -442,6 +438,7 @@ body{
 }
 
 #projects .pathFinderText h4{
+    opacity: .5;
     height: 100px;
     font-size: 5rem;
     margin-bottom: -20px;
@@ -458,6 +455,7 @@ body{
 }
 
 #projects .pathFinderText p{
+    opacity: .7;
     font-size: 1.75rem;
     line-height: 40px;
     color: #FFF;
@@ -507,26 +505,6 @@ body{
 }
 /* End Contact Rows */
 
-/* Start Contact Arrow */
-#contact .contactArrow{
-    margin: 0;
-    top: 450px;
-    left: 70px;
-    padding: 0;
-    opacity: .7;
-    width: 100%;
-    height: 100%;
-    max-width: 40px;
-    max-height: 66px;
-    transition: .3s linear all;
-    animation: contactArrow .4s alternate-reverse infinite;
-}
-
-#contact .contactArrow:hover{
-    opacity: 1;
-}
-/* End Contact Arrow */
-
 /* Start Contact Form */
 #contact .contactForm{
     margin: 0;
@@ -537,27 +515,28 @@ body{
     height: 350px;
     max-width: 785px;
     max-height: 350px;
-    margin-left: 328px;
+    margin-left: 366px;
 }
 
 #contact .formContainer{
+    opacity: .7;
     width: 100%;
     height: 100%;
-    background: #FFF;
+    background: #E8A94B;
 }
 
 #contact .contactForm h2{
+    opacity: 1;
     width: 26px;
     height: 350px;
-    opacity: .8;
     font-weight: 300;
     color: #2A2A2A;
     user-select: none;
     text-align: center;
-    font-size: 1.85rem;
+    font-size: 1.5rem;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
     -webkit-user-select: none;
-    overflow-wrap: break-word;
-    background-color: #E8A94B;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -582,7 +561,7 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    max-width: 295px;
+    max-width: 255px;
     max-height: 62px;
     overflow: hidden;
     margin-top: 100px;
@@ -598,13 +577,13 @@ body{
 
 #contact .socialImage img{
     width: 50px;
-    opacity: .5;
+    opacity: .4;
     height: auto;
     transition: .2s linear all;
 }
 
 #contact .socialImage img:hover{
-    opacity: .9;
+    opacity: .8;
 }
 /* End Contact Social Media */
 

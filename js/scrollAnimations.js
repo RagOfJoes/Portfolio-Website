@@ -3,12 +3,8 @@ $(document).ready(function () {
 
     // Start About Tween
     var aboutTween = new TimelineLite();
-    aboutTween.to('#aboutTextContainer', .2, { height: '400px', ease: Power1.easeOut }, 'first')
-        .from('.aboutLightOverlay', .2, { height: '0px', ease: Power1.easeOut }, 'first')
-        .from('#personPicture', .2, { height: '0px', ease: Power1.easeOut }, 'first')
-        .from('.personLightOverlay', .2, { height: '0px', ease: Power1.easeOut }, 'first')
-        .to('.personLightOverlay', .2, { width: '0px', ease: Power1.easeOut }, 'second')
-        .to('.aboutLightOverlay', .2, { width: '0px', ease: Power1.easeOut }, 'second');
+    aboutTween.to('#aboutTextContainer', .2, { height: '400px', autoAlpha: 1, ease: Power1.easeOut }, 'first')
+        .from('#personPicture', .2, { height: '0px', autoAlpha: 0, ease: Power1.easeOut }, 'first')
 
     new ScrollMagic.Scene({
         triggerElement: '#about #personContainer',
